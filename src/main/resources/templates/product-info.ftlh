@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="LT">
 <head>
-    <title>BUYSELL</title>
+    <title>AIRSOFT_SHOP</title>
 </head>
 <body>
-<h1>BUYSELL</h1>
+<h1>AIRSOFT_SHOP</h1>
 <hr>
 <h4>Product information</h4>
+<#list images as img>
+    <img src="/images/${img.id}" height="60px" alt=""/><br><br>
+</#list>
+
+
 <b>Product name: </b>${product.title}<br>
 <b>Description: </b>${product.description}<br>
 <b>Product price: </b>${product.price}<br>
@@ -16,6 +21,7 @@
 
 
 <form action="/product/delete/${product.id}" method="post">
+<#--    <input type="hidden" name="_csrf" value="${_csrf.token}">-->
     <input type="submit" value="Delete product"/>
 </form>
 </body>

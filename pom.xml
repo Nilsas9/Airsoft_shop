@@ -12,7 +12,7 @@
 	<artifactId>airsoft_shop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>airsoft_shop</name>
-	<description>e.shop profect</description>
+	<description>e.shop project</description>
 	<properties>
 		<java.version>20</java.version>
 	</properties>
@@ -58,6 +58,11 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>jakarta.persistence</groupId>-->
+<!--			<artifactId>jakarta.persistence-api</artifactId>-->
+<!--			<version>2.2.3</version>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>

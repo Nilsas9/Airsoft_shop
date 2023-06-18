@@ -1,10 +1,11 @@
 package lt.code.academy.airsoft_shop.models;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class Product {
     private Long id;
     @Column(name = "title")
     private String title;
-    //    pasidinu, nes pagal nutylejima meta 255 simbolius
+    //    pasididinu, nes pagal nutylejima meta 255 simbolius
     @Column(name = "description", columnDefinition = "text")
     private String description;
     @Column(name = "price")
@@ -32,7 +33,6 @@ public class Product {
     private String author;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
-
     private List<Image> images = new ArrayList<>();
     private Long previewImageId;
     private LocalDateTime dateOfCreated;
@@ -42,7 +42,7 @@ public class Product {
         dateOfCreated = LocalDateTime.now();
     }
 
-    public void addImageTOProduct(Image image){
+    public void addImageToProduct(Image image){
         image.setProduct(this);
         images.add(image);
     }
