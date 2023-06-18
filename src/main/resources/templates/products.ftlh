@@ -16,7 +16,7 @@
     <div>
         <p><b>${product.title}</b> ${product.price} eur | <a href="/product/${product.id}">Specifications..</a></p>
     </div>
-    <#else>
+<#else>
     <h3>No products</h3>
 </#list>
 <hr>

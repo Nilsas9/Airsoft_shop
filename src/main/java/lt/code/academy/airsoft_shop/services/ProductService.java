@@ -16,10 +16,9 @@ import java.util.List;
 public class ProductService {
     private final ProductRepository productRepository;
 
-    public List<Product> list(String title) {
-        List<Product> products = productRepository.findAll();
-        if (title != null) productRepository.findByTitle(title);
-
+    public List<Product> listProducts(String title) {
+//        List<Product> products = productRepository.findAll();
+        if (title != null) return productRepository.findByTitle(title);
         return productRepository.findAll();
     }
 
@@ -34,10 +33,9 @@ public class ProductService {
     }
 
     public Product getProductById(Long id) {
-        productRepository.findById(id).orElse(null);
-
+        return productRepository.findById(id).orElse(null);
 //        susigrazinu nuli jei neradau produkto
-        return null;
+
     }
 
 }
