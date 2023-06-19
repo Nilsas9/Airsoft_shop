@@ -4,7 +4,13 @@
     <title>AIRSOFT SHOP</title>
 </head>
 <body>
-<h1>AIRSOFT SHOP | <a href="/login">Login</a></h1><hr>
+<h1>AIRSOFT SHOP | <a href="/login">Login</a></h1>
+<hr>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <input type="submit" value="Logout"/>
+</form>
+
 <h4>Products from all Lithuania</h4>
 <form action="/" method="get">
     Find by name: <input type="text" name="title"><br>
