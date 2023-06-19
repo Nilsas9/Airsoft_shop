@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>AIRSOFT SHOP</title>
 </head>
 <body>
-<h1>AIRSOFT SHOP</h1><hr>
+<h1>AIRSOFT SHOP | <a href="/login">Login</a></h1><hr>
 <h4>Products from all Lithuania</h4>
 <form action="/" method="get">
     Find by name: <input type="text" name="title"><br>
@@ -33,7 +33,7 @@
     First image: <input type="file" name="file1"/><br><br>
     Second image: <input type="file" name="file2"/><br><br>
     Third image: <input type="file" name="file3"/><br><br>
-<#--    <input type="hidden" name="_csrf" value="${_csrf.token}">-->
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
     <input type="submit" value="Add product"/>
 </form>
 </body>
