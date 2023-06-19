@@ -32,17 +32,4 @@ public class UserController {
     }
 
 
-//    public String createUser(User user, Model model) {
-//        if (!userService.createUser(User)) {
-//            model.addAttribute("error message", "user with email:" + user.getEmail() + "active");
-//            return "registration";
-//        }
-//        return "redirect:/login";
-//    }
-
-
-//    @GetMapping("/hello")
-//    public String securityUrl() {
-//        return "hello";
-//    }
 }
