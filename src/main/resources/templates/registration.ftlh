@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>AIRSOFT SHOP</title>
+    <img src="https://airsoftshop.hr/wp-content/uploads/2021/08/airsoft-logo-300x110.jpg" alt="">
 </head>
 <body>
 <h1>AIRSOFT SHOP</h1><hr>
@@ -13,6 +14,7 @@
     Password: <input type="password" name="password"><br><br>
     <input type="hidden" name="_csrf" value="${_csrf.token}">
     <input type="submit" value="Submit"/>
+
 </form>
 <#if errorMessage??>
     <h2 style="color: red">${errorMessage}</h2>

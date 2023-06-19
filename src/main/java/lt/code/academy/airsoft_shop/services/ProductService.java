@@ -68,7 +68,7 @@ public void saveProduct(Product product) {
 
     public void deleteProduct(Long id) {
         productRepository.deleteById(id);
-//        productRepository.deleteAllById(Collections.singleton(id));
+
 
     }
 

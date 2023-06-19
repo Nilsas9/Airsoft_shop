@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>AIRSOFT SHOP</title>
+    <img src="https://airsoftshop.hr/wp-content/uploads/2021/08/airsoft-logo-300x110.jpg" alt="">
 </head>
 <body>
 <h1>AIRSOFT SHOP | <a href="/login">Login</a></h1>
