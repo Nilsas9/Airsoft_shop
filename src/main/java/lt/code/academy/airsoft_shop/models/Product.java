@@ -3,9 +3,9 @@ package lt.code.academy.airsoft_shop.models;
 
 import jakarta.persistence.*;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import org.springframework.data.annotation.Id;
+import lombok.NoArgsConstructor;
 
 
 import java.time.LocalDateTime;
@@ -15,6 +15,8 @@ import java.util.List;
 @Entity
 @Table(name = "products")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class Product {
     @Id
@@ -43,8 +45,8 @@ public class Product {
         dateOfCreated = LocalDateTime.now();
     }
 
-    public void addImageToProduct(Image image){
-        image.setProduct(this);
-        images.add(image);
-    }
+//    public void addImageToProduct(Image image){
+//        image.setProduct(this);
+//        images.add(image);
+//    }
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BUYSELL</title>
+    <title>AIRSOFT SHOP</title>
 </head>
 <body>
-<h1>BUYSELL</h1><hr>
+<h1>AIRSOFT SHOP</h1><hr>
 <h4>Products from all Lithuania</h4>
 <form action="/" method="get">
     Find by name: <input type="text" name="title"><br>

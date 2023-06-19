@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="LT">
 <head>
-    <title>AIRSOFT_SHOP</title>
+    <title>AIRSOFT SHOP</title>
 </head>
 <body>
-<h1>AIRSOFT_SHOP</h1>
+<h1>AIRSOFT SHOP</h1>
 <hr>
 <h4>Product information</h4>
-<#list images as img>
-    <img src="/images/${img.id}" height="60px" alt=""/><br><br>
-</#list>
+<#--<#list images as img>-->
+<#--    <img src="/images/${img.id}" height="60px" alt=""/><br><br>-->
+<#--</#list>-->
 
 
 <b>Product name: </b>${product.title}<br>

@@ -3,11 +3,13 @@ package lt.code.academy.airsoft_shop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import static org.springframework.boot.SpringApplication.run;
+
 @SpringBootApplication
 public class AirsoftShopApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AirsoftShopApplication.class, args);
+		run(AirsoftShopApplication.class, args);
 	}
 
 }
